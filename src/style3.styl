@@ -1,0 +1,66 @@
+$color-1 = #ddd
+$color-2 = #222
+$color-3 = rgba(128,191,255,0.5)
+$color-4 = #80bfff
+
+:root
+    --size 75
+
+*
+    box-sizing border-box
+
+body
+    display flex
+    box-align center
+    align-items center
+    flex-direction column
+    justify-content center
+    min-height 100vh
+    background $color-1
+
+    .container
+        position relative
+        height calc(var(--size) * 1vmin)
+        width calc(var(--size) * 1vmin)
+        border 2px solid $color-2
+
+    .element
+        height 40px
+        width 40px
+        background $color-3
+        border 2px $color-4 solid
+        position absolute
+        top 0%
+        left 0%
+        offset-path path(var(--path))
+        animation travel 2s infinite alternate linear
+
+    svg
+        position absolute
+        height calc(var(--size) * 1vmin)
+        opacity 0.5
+        width calc(var(--size) * 1vmin)
+
+        path
+            fill none
+            stroke-width 4px
+            stroke #222
+
+
+    @media (prefers-color-scheme: dark)
+        background $color-2
+
+        .container
+            border 2px solid $color-1
+
+        svg
+            path
+                stroke #ddd
+
+
+@keyframes travel
+    from
+        offset-distance 0%
+
+    to
+        offset-distance 100%

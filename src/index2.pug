@@ -9,5 +9,7 @@ html(lang="en")
         svg(viewBox="10 10 200 100")
             path(d='M20,20 C20,100 200,0 200,100')
         .block
-    input(type='range', min='0', max='100', step='1')
-    h1 offset-distance: 50%;
+    input.distance(type='range', min='0', max='100', step='1')
+    h1.distance offset-distance: 50%;
+    input.rotate(type='range', min='0', max='360', step='1', value='0')
+    h1.rotate offset-rotate: auto;

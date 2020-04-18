@@ -37,7 +37,7 @@ html(lang="en")
             ellipse#ellipse200(ry='12.57025' rx='12.039111' cy='146.34923' cx='521.36218' style='fill:#000000;fill-opacity:1;stroke:none;stroke-width:4.05340338;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1')
     // random html 바인딩
     - const randomInRange = (max, min) => Math.floor(Math.random() * (max - min + 1)) + min
-    - const bears = 10
+    - const bears = 20
     - const colorMap = new Array(bears).fill().reduce((a) => { return [...a,{lightness: randomInRange(20, 70), hue: randomInRange(0, 360)}]}, [])
     // form을 만든다.
     form.bears(style=`--bear-count: ${bears}`)

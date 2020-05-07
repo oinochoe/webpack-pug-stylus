@@ -47,7 +47,7 @@ module.exports = {
             title: 'Application',
             hash: true,
             // Change there name of main |pug| file
-            template: './src/d3.pug',
+            template: './src/slider.pug',
         }),
         new webpack.optimize.UglifyJsPlugin({}),
     ],

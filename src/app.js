@@ -1,1 +1,1 @@
-import css from './slider.styl';
+import css from './style3.styl';
